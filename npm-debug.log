@@ -1,0 +1,77 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '–g',
+1 verbose cli   'coffee-script' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.2
+4 error arg Argument starts with non-ascii dash, this is probably invalid: [ '–g', 'coffee-script' ]
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData –g
+9 silly fetchPackageMetaData coffee-script
+10 silly fetchOtherPackageData –g
+11 silly cache add args [ '–g', null ]
+12 verbose cache add spec –g
+13 silly fetchNamedPackageData coffee-script
+14 silly mapToRegistry name coffee-script
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'coffee-script',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   escapedName: 'coffee-script',
+17 silly mapToRegistry   name: 'coffee-script',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: '–g',
+19 silly cache add   scope: null,
+19 silly cache add   escapedName: null,
+19 silly cache add   name: null,
+19 silly cache add   rawSpec: '–g',
+19 silly cache add   spec: 'C:\\Users\\bbsydp-city\\Desktop\\blog\\–g',
+19 silly cache add   type: 'local' }
+20 verbose request uri https://registry.npmjs.org/coffee-script
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 11:02:29 AM
+23 verbose request id 7f3bea459e00c3e5
+24 http request GET https://registry.npmjs.org/coffee-script
+25 error addLocal Could not install C:\Users\bbsydp-city\Desktop\blog\–g
+26 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open 'C:\Users\bbsydp-city\Desktop\blog\–g'
+26 silly fetchPackageMetaData     at Error (native)
+26 silly fetchPackageMetaData  error for –g { Error: ENOENT: no such file or directory, open 'C:\Users\bbsydp-city\Desktop\blog\–g'
+26 silly fetchPackageMetaData     at Error (native)
+26 silly fetchPackageMetaData   errno: -4058,
+26 silly fetchPackageMetaData   code: 'ENOENT',
+26 silly fetchPackageMetaData   syscall: 'open',
+26 silly fetchPackageMetaData   path: 'C:\\Users\\bbsydp-city\\Desktop\\blog\\–g' }
+27 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+28 info attempt registry request try #2 at 11:02:39 AM
+29 http request GET https://registry.npmjs.org/coffee-script
+30 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+31 verbose stack Error: kill ENOSYS
+31 verbose stack     at exports._errnoException (util.js:1018:11)
+31 verbose stack     at process.kill (internal/process.js:190:13)
+31 verbose stack     at process.listener (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+31 verbose stack     at emitNone (events.js:91:20)
+31 verbose stack     at process.emit (events.js:185:7)
+31 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+31 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+31 verbose stack     at Signal.wrap.onsignal (internal/process.js:217:44)
+32 verbose cwd C:\Users\bbsydp-city\Desktop\blog
+33 error Windows_NT 6.1.7601
+34 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "–g" "coffee-script"
+35 error node v6.10.2
+36 error npm  v3.10.10
+37 error code ENOSYS
+38 error errno ENOSYS
+39 error syscall kill
+40 error kill ENOSYS
+41 error If you need help, you may report this error at:
+41 error     <https://github.com/npm/npm/issues>
+42 verbose exit [ 1, true ]
